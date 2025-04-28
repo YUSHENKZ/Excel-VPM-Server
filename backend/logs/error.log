@@ -1,0 +1,29 @@
+2025-04-27 18:25:28 error: 不支持的文件类型: .wav
+2025-04-27 20:47:33 error: 未捕获的异常: listen EADDRINUSE: address already in use :::3001
+2025-04-27 21:13:36 error: 未捕获的异常: listen EADDRINUSE: address already in use :::3001
+2025-04-27 23:03:55 error: 文件不存在或无法访问: �w^~)� ENOENT: no such file or directory, stat 'G:\项目区\update\backend\�w^~)�'
+2025-04-27 23:03:58 error: 文件不存在或无法访问: �w^~)� ENOENT: no such file or directory, stat 'G:\项目区\update\backend\�w^~)�'
+2025-04-27 23:03:59 error: 文件不存在或无法访问: �w^~)� ENOENT: no such file or directory, stat 'G:\项目区\update\backend\�w^~)�'
+2025-04-28 00:19:24 error: File too large
+2025-04-28 00:20:11 error: 文件监控错误: EPERM: operation not permitted, watch
+2025-04-28 00:20:11 error: 文件监控错误: EPERM: operation not permitted, watch
+2025-04-28 00:23:19 error: File too large
+2025-04-28 00:24:54 error: File too large
+2025-04-28 00:26:27 error: 文件不存在或无法访问: �w^~)� ENOENT: no such file or directory, stat 'G:\项目区\update\backend\�w^~)�'
+2025-04-28 00:26:29 error: 文件不存在或无法访问: �w^~)� ENOENT: no such file or directory, stat 'G:\项目区\update\backend\�w^~)�'
+2025-04-28 00:27:29 error: 文件不存在或无法访问: �w^~)� ENOENT: no such file or directory, stat 'G:\项目区\update\backend\�w^~)�'
+2025-04-28 00:27:30 error: 文件不存在或无法访问: �w^~)� ENOENT: no such file or directory, stat 'G:\项目区\update\backend\�w^~)�'
+2025-04-28 00:27:32 error: 文件不存在或无法访问: �w^~)� ENOENT: no such file or directory, stat 'G:\项目区\update\backend\�w^~)�'
+2025-04-28 00:44:38 error: 文件不存在或无法访问: �w^~)� ENOENT: no such file or directory, stat 'G:\项目区\update\backend\�w^~)�'
+2025-04-28 00:45:12 error: 文件不存在或无法访问: �w^~)� ENOENT: no such file or directory, stat 'G:\项目区\update\backend\�w^~)�'
+2025-04-28 02:00:21 error: 文件不存在或无法访问: �w^~)� ENOENT: no such file or directory, stat 'G:\项目区\update\backend\�w^~)�'
+2025-04-28 02:00:23 error: 文件不存在或无法访问: �w^~)� ENOENT: no such file or directory, stat 'G:\项目区\update\backend\�w^~)�'
+2025-04-28 02:04:08 error: 文件不存在或无法访问: �w^~)� ENOENT: no such file or directory, stat 'G:\项目区\update\backend\�w^~)�'
+2025-04-28 02:04:10 error: 文件不存在或无法访问: �w^~)� ENOENT: no such file or directory, stat 'G:\项目区\update\backend\�w^~)�'
+2025-04-28 02:06:40 error: 文件不存在或无法访问: �w^~)� ENOENT: no such file or directory, stat 'G:\项目区\update\backend\�w^~)�'
+2025-04-28 02:45:11 error: 未捕获的异常: listen EADDRINUSE: address already in use :::3001
+2025-04-28 02:51:21 error: 文件不存在或无法访问: �w^~)� ENOENT: no such file or directory, stat 'G:\项目区\update\backend\�w^~)�'
+2025-04-28 10:49:55 error: 未捕获的异常: listen EADDRINUSE: address already in use :::3001
+2025-04-28 10:50:59 error: 未捕获的异常: listen EADDRINUSE: address already in use :::3001
+2025-04-28 11:38:16 error: 未捕获的异常: listen EADDRINUSE: address already in use :::3001
+2025-04-28 11:48:23 error: 未捕获的异常: listen EADDRINUSE: address already in use :::3001

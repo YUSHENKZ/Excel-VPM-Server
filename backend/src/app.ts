@@ -1,0 +1,80 @@
+import express from 'express';
+import cors from 'cors';
+import helmet from 'helmet';
+import morgan from 'morgan';
+import dotenv from 'dotenv';
+import path from 'path';
+import routes from './routes';
+import logger from './utils/logger';
+
+// 加载环境变量
+dotenv.config();
+
+// 创建Express应用
+const app = express();
+
+// 简化的请求监控中间件 - 避免类型问题
+app.use((req, res, next) => {
+  const start = Date.now();
+  
+  // 监听response完成事件
+  res.on('finish', () => {
+    const duration = Date.now() - start;
+    const size = parseInt(String(res.getHeaders()['content-length'] || '0'), 10);
+    const status = res.statusCode;
+    
+    console.log(`[请求] ${req.method} ${req.url} - ${status} - ${size} bytes - ${duration}ms`);
+  });
+  
+  next();
+});
+
+// 配置跨域
+app.use(cors({
+  origin: process.env.CORS_ORIGIN || 'http://localhost:3000',
+  credentials: true
+}));
+
+// 安全中间件
+app.use(helmet());
+
+// 日志中间件
+app.use(morgan('dev', {
+  stream: {
+    write: (message: string) => {
+      logger.info(message.trim());
+    }
+  }
+}));
+
+// 请求体解析
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// 静态文件
+app.use('/static', express.static(path.join(__dirname, '../public')));
+
+// API路由
+app.use('/api', routes);
+
+// 健康检查- API 路由
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'UP', timestamp: new Date() });
+});
+
+// 保留原来的健康检查路径，以确保兼容性
+app.get('/health', (req, res) => {
+  res.json({ status: 'UP', timestamp: new Date() });
+});
+
+// 错误处理
+app.use((err: any, req: any, res: any, next: any) => {
+  logger.error('未处理的错误:', err);
+  res.status(500).json({
+    code: 500,
+    message: '服务器内部错误',
+    data: null
+  });
+});
+
+export default app; 

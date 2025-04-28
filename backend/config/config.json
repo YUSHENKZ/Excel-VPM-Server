@@ -1,0 +1,33 @@
+{
+  "fileWatching": {
+    "directories": [
+      "./data",
+      "./uploads"
+    ],
+    "fileTypes": [
+      ".csv",
+      ".xlsx",
+      ".json"
+    ],
+    "watchInterval": 5000,
+    "enabled": true
+  },
+  "visualization": {
+    "defaultChartType": "pie",
+    "colorScheme": "macarons",
+    "autoRefresh": true,
+    "refreshInterval": 30000,
+    "theme": "default",
+    "enableAnimation": true
+  },
+  "ui": {
+    "theme": "light",
+    "language": "zh-CN",
+    "tableSettings": {
+      "pageSize": 50,
+      "enableSearch": true
+    }
+  },
+  "fileEncoding": "utf8",
+  "csvSeparator": ","
+}
